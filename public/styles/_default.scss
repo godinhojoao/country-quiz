@@ -1,0 +1,146 @@
+:root {
+    font-size: 70%;
+}
+
+body {
+    @include heightAndWidth(100vh, 100vw);
+
+    background-image: url('../images/background.png');
+    background-size: cover;
+
+    @extend .flex-column;
+    align-items: center;
+    justify-content: center;
+
+    color: $primary-color;
+    font-family: 'Poppins', sans-serif;
+
+    overflow: hidden;
+}
+
+div#container {
+    @include heightAndWidth(100%, 100%);
+    @extend .flex-column;
+
+    justify-content: center;
+
+    max-width: 30%;
+   
+    h1 {
+        width: 60%;
+        align-self: flex-start;
+
+        font-size: 2.3rem;
+        font-weight: bold;
+        line-height: 4.6rem;
+    }
+}
+
+.content {
+    @include heightAndWidth(70%, 100%);
+    
+    @extend .flex-column;
+    position: relative;
+
+    background: white;
+    border-radius: 2.4rem;
+    color: $font-color-quests;
+    
+    padding: 4rem 3.2rem;
+
+    h2 {
+        font-weight: bold;
+        font-size: 2rem;
+    }
+
+    img.logo {
+        width: 35%;
+        
+        position: absolute;
+        transform: translate(160%, -122%);
+    }
+
+    img.flag {    
+        max-width: 70px;
+        display: block;
+        margin-bottom: 3px;
+        box-shadow: 1px 1px 2px rgba(0, 0, 0, 47%);
+    }
+
+    .alternatives {
+        @include heightAndWidth(100%, 100%);
+        @extend .flex-column;
+        justify-content: space-around;
+
+        button {
+            @include heightAndWidth(18%, 100%);
+            @extend .button-default;
+            @include border($buttons-alternative-color);
+
+            background: transparent;
+
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+
+            font-size: 2rem;
+            color: $buttons-alternative-color;
+
+            transition: .2s;
+
+            span.alternative-letters {
+                margin: 0px 2rem;
+                font-weight: bold;
+            }
+
+            &.awaiting-response:hover {
+                background: $buttons-background; 
+                border-color: $buttons-background;
+                color: $primary-color;   
+            }
+
+            &.is-wrong {
+                border: 1px solid transparent;
+                background: #EA8282;
+                color: white;
+            }
+    
+            &.is-right {
+                border: 1px solid transparent;
+                background: #60BF88;
+                color: white;
+            }
+    
+            div {
+                width: 100%;
+                
+                padding-right: 20px;
+               
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+    }        
+
+    button.next {
+        @include heightAndWidth(15%, 23%);
+        @extend .button-default;
+        @include border(transparent);
+
+        background: $buttons-background;
+        color: $primary-color;
+
+        align-self: flex-end;
+
+        opacity: 0;
+
+        &.vertical-translate {
+            transform: translate(0px, 2000px);
+        }
+    }
+}
+
+footer {
+    position: absolute;
+    bottom: 10px;
+}

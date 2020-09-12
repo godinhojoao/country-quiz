@@ -1,0 +1,15 @@
+{
+  "name": "country-quiz",
+  "version": "1.0.0",
+  "description": "Um quiz sobre países feito com html, js e scss. Neste projeto consumo uma REST API no front-end.",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx lite-server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "lite-server": "^2.5.4"
+  }
+}

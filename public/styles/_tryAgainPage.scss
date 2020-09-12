@@ -1,0 +1,32 @@
+div.content.lose {
+    justify-content: space-around;
+
+    div.results {
+        text-align: center;
+        h2{
+            font-size: 4.3rem;
+        }
+
+        p {
+            font-size: 1.8rem;
+        }
+
+        span.points {
+            color: #60BF88;
+            font-size: 2.2rem;
+            font-weight: bold;
+        }
+    }
+
+    button.try-again {
+        @include heightAndWidth(13%, 50%);
+        @extend .button-default;
+
+        align-self: center;
+        
+        border: 2px solid #1D355D;
+        background-color: #ffffff;
+        color: #1D355D;
+
+    }
+}

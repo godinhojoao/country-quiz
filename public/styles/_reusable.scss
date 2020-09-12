@@ -1,0 +1,25 @@
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.button-default {
+    border-radius: 1.2rem;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+
+    &:hover {
+        color: white;
+        border: 1px solid transparent;
+        background: #f6b958;
+    }
+}
+
+@mixin heightAndWidth($height, $width) {
+    height: $height;
+    width: $width;
+}
+
+@mixin border($color) {
+    border: 1px solid $color;
+}

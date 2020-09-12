@@ -1,0 +1,63 @@
+@media(max-width: 1025px) {
+    div#container {
+        max-width: 50%;
+        
+        .content {
+            height: 50%;
+        }  
+    }
+}
+
+@media(max-width: 790px) {
+    :root {
+        font-size: 62.5%
+    }
+    
+    div#container {
+        max-width: 65%;
+    }
+}
+
+@media(max-width: 690px) {
+    div#container {
+        max-width: 70%;
+
+        .content {
+            height: 40%;
+        }
+    }
+}
+
+@media(max-width: 560px) {
+    :root {
+        font-size: 58%
+    }
+    
+    div#container {
+        max-width: 75%;
+
+        .content {
+            height: 40%;
+        }
+    }
+}
+
+@media (max-width: 450px) {
+    :root {
+        font-size: 54%;
+    }
+
+    div#container {
+        max-width: 80%;
+    }
+}
+
+@media (max-width: 315px) {
+    :root {
+        font-size: 50%;
+    }
+    
+    div#container .content {
+            height: 30%;
+        }
+}
